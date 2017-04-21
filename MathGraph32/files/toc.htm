@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+  <head>
+    <meta name="generator" content="HelpNDoc Freeware Edition">
+    <link rel="StyleSheet" href="toc.css" type="text/css"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cookie.js"></script>
+    <script type="text/javascript" src="jquery.treeview.min.js"></script>
+    <script type="text/javascript" src="searchdata.js"></script>
+    <script type="text/javascript"><!--
+      $(document).ready(function(){
+        $("#toc").treeview(
+        {collapsed: true}
+        )
+        $("#keywords").treeview({collapsed: true});
+        $(document.body).click(function(e){var $target = $(e.target); if($target.is("a")) return; hidePopup();});
+        $(function(){var tabContainers = $("div.tabs > div");tabContainers.hide().filter(":first").show();$("div.tabs ul.tabNavigation a").click(function(){tabContainers.hide();
+        tabContainers.filter(this.hash).show();$("div.tabs ul.tabNavigation a").removeClass("selected");$(this).addClass("selected");return false;}).filter(":first").click();});
+      });
+      function hidePopup() {if($("#popupMenu")) $("#popupMenu").remove();}
+      function showPopup(oSender,aLinks){hidePopup();if (aLinks==0) return true;var oParentDiv=document.createElement("DIV");oParentDiv.id="popupMenu";var oLink,oBr=null;
+      for (var nCnt=0;nCnt<aLinks.length;nCnt++){oLink=document.createElement("A");oLink.innerHTML=aLinks[nCnt][0];oLink.href=aLinks[nCnt][1];oLink.target="FrameMain";oLink.onclick=hidePopup;
+      oParentDiv.appendChild(oLink);if (nCnt<aLinks.length-1){oBr=document.createElement("BR");oParentDiv.appendChild(oBr);}}document.body.appendChild(oParentDiv);var pos=$(oSender).offset(); 
+      var height=$(oSender).height();$(oParentDiv).css({"backgroundColor": "#EEEEEE","border": "1px solid #999999","position": "absolute","left": (pos.left+20)+"px","top": (pos.top+height+5)+"px",
+      "padding": 5+"px"});$(oParentDiv).show();return false;}
+      function performSearch(){sValue = $("#search_value").val().toLowerCase();if (oSearchData[sValue]){$("#search_results").html("Found " + oSearchData[sValue].length + " results");for (var nCnt = 0; nCnt < oSearchData[sValue].length; nCnt++){var oElmt = document.createElement("DIV");oElmt.innerHTML = "<a href='" + oSearchData[sValue][nCnt][0] + "' target='FrameMain'>" + oSearchData[sValue][nCnt][1] + "</a> (" + oSearchData[sValue][nCnt][2] + ")<br/>";$(oElmt).appendTo($("#search_results"));}}else{$("#search_results").html("No result found");}}
+    //--></script>
+    <style type="text/css">
+      ul.tabNavigation{list-style: none;margin: 0;padding: 10px;}ul.tabNavigation li{display: inline;}ul.tabNavigation li A{padding: 3px 5px;background-color: #ccc;color: #000;
+      text-decoration: none;}ul.tabNavigation li A.selected,ul.tabNavigation li A:hover{background-color: #333;color: #fff;}ul.tabNavigation li A:focus{outline: 0;}
+      </style>
+  </head>
+
+  <body>
+  
+    <div class="tabs">
+      <ul class="tabNavigation">
+        <li><a href="#tab_toc">Contents</a></li>
+        <li><a href="#tab_keywords">Index</a></li>
+        <li><a href="#tab_search">Search</a></li>
+      </ul>
+      <div id="tab_toc">
+        <ul id="toc" class="filetree">
+          
+          <li>
+            <a href="PrsentationDuLogiciel.html" class="folder" target="FrameMain">Presentación del programa</a>
+            <ul>
+              
+              <li>
+                <a href="Prsentation.html" class="file" target="FrameMain">Presentación general.</a>
+              </li>
+              
+              <li>
+                <a href="Version java.html" class="file" target="FrameMain">Especificaciones de la versión java.</a>
+              </li>
+              
+              <li>
+                <a href="Aidevisuellelacerationdobjets.html" class="file" target="FrameMain">Ayuda visual para la creación de objetos.</a>
+              </li>
+              
+              <li>
+                <a href="Coloresytransparencia.html" class="file" target="FrameMain">Colores y transparencia</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="LesObjetsGraphiques.html" class="file" target="FrameMain">Los objetos gráficos.</a>
+          </li>
+          
+          <li>
+            <a href="Lesobjetsnumeriques.html" class="folder" target="FrameMain">Los objetos numéricos</a>
+            <ul>
+              
+              <li>
+                <a href="Lasyntaxedescalculsreels.html" class="file" target="FrameMain">La sintaxis de los cálculos reales.</a>
+              </li>
+              
+              <li>
+                <a href="Lasyntaxedescalculscomplexes.html" class="file" target="FrameMain">La sintaxis de los cálculos complejos.</a>
+              </li>
+              
+              <li>
+                <a href="Lesobjetsnumeriquesdetypecalcu.html" class="folder" target="FrameMain">Los objetos numéricos tipo cálculo</a>
+                <ul>
+                  
+                  <li>
+                    <a href="Lecalculreeloucomplexe.html" class="file" target="FrameMain">El cálculo real o complejo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lavariable.html" class="file" target="FrameMain">La variable</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lafonctionnumeriquereelle.html" class="file" target="FrameMain">La  función numérica real</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lafonctionderivee.html" class="file" target="FrameMain">La función derivada</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lafonctionnumeriquecomplexe.html" class="file" target="FrameMain">La función numérica compleja</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lavaleurapprochedesolutiondequ.html" class="file" target="FrameMain">La solución aproximada de una ecuación f(x) = 0</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lavaleurapprocheedintegrale.html" class="file" target="FrameMain">El valor aproximado de una integral</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Letestdexistence.html" class="file" target="FrameMain">El test de existencia</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lasommeindicee.html" class="file" target="FrameMain">La  suma indicial</a>
+                  </li>
+                  
+                  <li>
+                    <a href="El productoindicial.html" class="file" target="FrameMain">El producto indicial</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lasuitercurrenterelle.html" class="file" target="FrameMain">La sucesión recurrente real</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lasuiterecurrentecomplexe.html" class="file" target="FrameMain">La sucesión recurrente compleja</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lemoduledecomplexe.html" class="file" target="FrameMain">El módulo de un complejo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Largumentprincipaldecomplexe.html" class="file" target="FrameMain">El argumento principal de un complejo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lapartierelledecomplexe.html" class="file" target="FrameMain">La parte real de un complejo</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lapartieimaginairedecomplexe.html" class="file" target="FrameMain">La parte imaginaria de complejo</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="Lesmesures.html" class="folder" target="FrameMain">Las medidas</a>
+                <ul>
+                  
+                  <li>
+                    <a href="Mesuredelongueur.html" class="file" target="FrameMain">Medida de longitud</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesureduneabscisse.html" class="file" target="FrameMain">Medida de una abscisa</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredanglenonoriente.html" class="file" target="FrameMain">Medida de ángulo no orientado</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredangleoriente.html" class="file" target="FrameMain">Medida de ángulo orientado</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredabscissedansunrepere.html" class="file" target="FrameMain">Medida de abscisa en un referencial</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredordonneedansunrepere.html" class="file" target="FrameMain">Medida de ordenada en un referencial</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Lamesuredecoefficientdirecteur.html" class="file" target="FrameMain">Medida del coeficiente director en un referencial</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredaffixedansunrepere.html" class="file" target="FrameMain">Medida de afijo en un referencial</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredelongueurdeligne.html" class="file" target="FrameMain">Medida de longitud de línea</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Mesuredairedepolygone.html" class="file" target="FrameMain">Medida de área de un polígono</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Medidadeunproductoescalar.html" class="file" target="FrameMain">Medida de un producto escalar</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Lesicones.html" class="folder" target="FrameMain">Los íconos</a>
+            <ul>
+              
+              <li>
+                <a href="Iconesdeconstruction.html" class="file" target="FrameMain">Los íconos de construcción</a>
+              </li>
+              
+              <li>
+                <a href="Lesiconesdelabarresuperieure.html" class="file" target="FrameMain">Los íconos de la barra superior</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Lestransformationsgeometriques.html" class="file" target="FrameMain">Las transformaciones geométricas</a>
+          </li>
+          
+          <li>
+            <a href="Modificationdunobjet.html" class="folder" target="FrameMain">Modificación de un objeto</a>
+            <ul>
+              
+              <li>
+                <a href="ModificationObjetNumerique.html" class="file" target="FrameMain">Numérico</a>
+              </li>
+              
+              <li>
+                <a href="Modificationobjetgraphique.html" class="file" target="FrameMain">Gráfico</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Lesreperes.html" class="file" target="FrameMain">Los referenciales</a>
+          </li>
+          
+          <li>
+            <a href="Lereclassementdobjets.html" class="file" target="FrameMain">La reclasificación de objetos</a>
+          </li>
+          
+          <li>
+            <a href="Lescourbesetgraphes.html" class="folder" target="FrameMain">Las curvas y gráficos</a>
+            <ul>
+              
+              <li>
+                <a href="Courbedefonction.html" class="file" target="FrameMain">Curva de función</a>
+              </li>
+              
+              <li>
+                <a href="Graphedesuiterecurrente.html" class="file" target="FrameMain">El gráfico de una sucesión recurrente</a>
+              </li>
+              
+              <li>
+                <a href="Pointsurcourbeparpointlie.html" class="file" target="FrameMain">Punto sobre curva de función por punto ligado</a>
+              </li>
+              
+              <li>
+                <a href="Pointsurcourbeparabscisse.html" class="file" target="FrameMain">Punto sobre curva de función por abscisa</a>
+              </li>
+              
+              <li>
+                <a href="TangenteAcourbedefonction.html" class="file" target="FrameMain">Tangente a una curva de función</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Lesmacros.html" class="folder" target="FrameMain">Las macros</a>
+            <ul>
+              
+              <li>
+                <a href="Lesdifferentstypesdemacros.html" class="folder" target="FrameMain">Los diferentes tipos de macros</a>
+                <ul>
+                  
+                  <li>
+                    <a href="Lamacrodapparitiondobjets.html" class="file" target="FrameMain">Aparición de objetos</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Disparitiondobjets.html" class="file" target="FrameMain">Ocultamiento de objetos</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Animationdunpointli.html" class="file" target="FrameMain">Animación de punto ligado</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Animationdepointlieavectrace.html" class="file" target="FrameMain">Animación de punto ligado con traza</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Affectationdevaleuravariable.html" class="file" target="FrameMain">Afectación de valor a una variable</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Modificationdevariable.html" class="file" target="FrameMain">Modificación de variable</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Jouantunfichiersonore.html" class="file" target="FrameMain">Abriendo un fichero sonoro</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Incrementationdevariable.html" class="file" target="FrameMain">Incrementando una variable</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Decrementationdevariable.html" class="file" target="FrameMain">Disminuyendo una variable</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Traceautoparpointlie.html" class="file" target="FrameMain">Traza auto por punto ligado</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Traceautoparvariable.html" class="file" target="FrameMain">Traza auto por variable</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Dplacementdepointlie.html" class="file" target="FrameMain">Desplazamiento de punto ligado</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Clignotementdobjets.html" class="file" target="FrameMain">Parpadeo de objetos</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Redessinantlafigure.html" class="file" target="FrameMain">Rediseñando la figura</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Pause.html" class="file" target="FrameMain">Pausa</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Boucleavecanimation.html" class="file" target="FrameMain">Bucle con animación</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Boucleavectrace.html" class="file" target="FrameMain">Bucle con traza</a>
+                  </li>
+                  
+                  <li>
+                    <a href="Executiondunesuitedemacros.html" class="file" target="FrameMain">Ejecución de una sucesión de macros</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="Ajoutsdobjetsaunemacro.html" class="file" target="FrameMain">Agregar objetos a una macro</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Retraitdobjetsdunemacro.html" class="file" target="FrameMain">Quitar objetos a una macro</a>
+          </li>
+          
+          <li>
+            <a href="Lescurseurs.html" class="file" target="FrameMain">Los cursores</a>
+          </li>
+          
+          <li>
+            <a href="Lesconstructions.html" class="folder" target="FrameMain">Las construcciones</a>
+            <ul>
+              
+              <li>
+                <a href="PresentationCosntructions.html" class="file" target="FrameMain">Presentación</a>
+              </li>
+              
+              <li>
+                <a href="ConstructionsExemple1.html" class="file" target="FrameMain">Ejemplo 1</a>
+              </li>
+              
+              <li>
+                <a href="ConstructionsExemple2.html" class="file" target="FrameMain">Ejemplo 2</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="Preferencesdefonctionnement.html" class="file" target="FrameMain">Preferencias de funcionamiento.</a>
+          </li>
+          
+          <li>
+            <a href="Optionsdelafigure.html" class="file" target="FrameMain">Opciones de la figura</a>
+          </li>
+          
+          <li>
+            <a href="Lesliaisons.html" class="file" target="FrameMain">Las ligaduras</a>
+          </li>
+          
+          <li>
+            <a href="Atajosdeteclado.html" class="file" target="FrameMain">Atajos de teclado</a>
+          </li>
+          
+          <li>
+            <a href="CarcteresEspeciales.html" class="file" target="FrameMain">Carácteres Especiales</a>
+          </li>
+      </ul>
+    </div>
+    
+    <div id="tab_keywords">
+      <ul id="keywords" class="filetree">
+        
+        <li>
+          <a href="Lasuiterecurrentecomplexe.html" target="FrameMain" class="file" onclick="return showPopup(this, [['La sucesión recurrente compleja', 'Lasuiterecurrentecomplexe.html'], ['El cálculo real o complejo', 'Lecalculreeloucomplexe.html'], ['La función numérica compleja', 'Lafonctionnumeriquecomplexe.html'], ['La sintaxis de los cálculos complejos.', 'Lasyntaxedescalculscomplexes.html']]);">Complexe</a>
+        </li>
+        
+        <li>
+          <a href="PresentationCosntructions.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Presentación', 'PresentationCosntructions.html'], ['Ejemplo 1', 'ConstructionsExemple1.html'], ['Ejemplo 2', 'ConstructionsExemple2.html']]);">Construction</a>
+        </li>
+        
+        <li>
+          <a href="Courbedefonction.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Curva de función', 'Courbedefonction.html'], ['Punto sobre curva de función por punto ligado', 'Pointsurcourbeparpointlie.html'], ['Punto sobre curva de función por abscisa', 'Pointsurcourbeparabscisse.html']]);">Courbe</a>
+        </li>
+        
+        <li>
+          <a href="Lescurseurs.html" target="FrameMain" class="file" onclick="hidePopup();">Curseur</a>
+        </li>
+        
+        <li>
+          <a href="Lafonctionnumeriquereelle.html" target="FrameMain" class="file" onclick="return showPopup(this, [['La  función numérica real', 'Lafonctionnumeriquereelle.html'], ['La función derivada', 'Lafonctionderivee.html'], ['La solución aproximada de una ecuación f(x) = 0', 'Lavaleurapprochedesolutiondequ.html'], ['El valor aproximado de una integral', 'Lavaleurapprocheedintegrale.html'], ['Curva de función', 'Courbedefonction.html']]);">Fonction</a>
+        </li>
+        
+        <li>
+          <a href="Lesliaisons.html" target="FrameMain" class="file" onclick="hidePopup();">Liaison</a>
+        </li>
+        
+        <li>
+          <a href="Mesuredelongueur.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Medida de longitud', 'Mesuredelongueur.html'], ['Medida de longitud de línea', 'Mesuredelongueurdeligne.html']]);">Longueur</a>
+        </li>
+        
+        <li>
+          <a href="Lamacrodapparitiondobjets.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Aparición de objetos', 'Lamacrodapparitiondobjets.html'], ['Ocultamiento de objetos', 'Disparitiondobjets.html'], ['Animación de punto ligado', 'Animationdunpointli.html'], ['Animación de punto ligado con traza', 'Animationdepointlieavectrace.html'], ['Afectación de valor a una variable', 'Affectationdevaleuravariable.html'], ['Modificación de variable', 'Modificationdevariable.html'], ['Abriendo un fichero sonoro', 'Jouantunfichiersonore.html'], ['Incrementando una variable', 'Incrementationdevariable.html'], ['Disminuyendo una variable', 'Decrementationdevariable.html'], ['Traza auto por punto ligado', 'Traceautoparpointlie.html'], ['Traza auto por variable', 'Traceautoparvariable.html'], ['Desplazamiento de punto ligado', 'Dplacementdepointlie.html'], ['Parpadeo de objetos', 'Clignotementdobjets.html'], ['Rediseñando la figura', 'Redessinantlafigure.html'], ['Pausa', 'Pause.html'], ['Bucle con animación', 'Boucleavecanimation.html'], ['Bucle con traza', 'Boucleavectrace.html'], ['Ejecución de una sucesión de macros', 'Executiondunesuitedemacros.html']]);">Macro</a>
+        </li>
+        
+        <li>
+          <a href="Lamesuredecoefficientdirecteur.html" target="FrameMain" class="file" onclick="return showPopup(this, [['Medida del coeficiente director en un referencial', 'Lamesuredecoefficientdirecteur.html'], ['Medida de ordenada en un referencial', 'Mesuredordonneedansunrepere.html'], ['Medida de longitud', 'Mesuredelongueur.html'], ['Medida de una abscisa', 'Mesureduneabscisse.html'], ['Medida de ángulo no orientado', 'Mesuredanglenonoriente.html'], ['Medida de ángulo orientado', 'Mesuredangleoriente.html'], ['Medida de abscisa en un referencial', 'Mesuredabscissedansunrepere.html'], ['Medida de longitud de línea', 'Mesuredelongueurdeligne.html'], ['Medida de área de un polígono', 'Mesuredairedepolygone.html']]);">Mesure</a>
+        </li>
+    </ul>
+  </div>
+  <div id="tab_search" style="padding:10px">
+    Search: <form onsubmit="performSearch(); return false;"><input id="search_value"></input><input type="submit" value="search"/></form><div id="search_results"></div>
+  </div>
+</div>
+</div>
+</body>
+
+</html>

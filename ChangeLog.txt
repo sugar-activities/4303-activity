@@ -1,0 +1,35 @@
+
+  Mathraph32 for Sugar ChangeLog
+ ================================
+
+2010-05-06 (version 1):
+	* Based on MathGraph32 version 2.2.3
+
+2010-05-07 (version 2):
+	* HTML help is available in English and Spanish
+          See folder "MathGraph32/help"
+
+2010-05-24 (version 3):
+	* Based on MathGraph32 version 2.4.0
+
+2010-05-30 (version 4):
+	* Based on MathGraph32 version 2.4.1
+
+2010-06-13 (version 6):
+	* Based on MathGraph32 version 2.5.1
+
+2010-07-16 (version 7):
+	* Based on MathGraph32 version 2.7.1-2
+
+2010-07-17 (version 8):
+	* Some levels were added
+
+2010-07-17 (version 9):
+	* Minor bug fixes
+
+
+
+-------------------------------------------------------------------------------
+Author:        Marcos Orfila  -  http://www.marcosorfila.com
+Last modified: Jul 17, 2010
+

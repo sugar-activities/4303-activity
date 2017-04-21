@@ -1,0 +1,743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Medida de longitud</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ color: #a0a0a0;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
+ color: #696969;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-weight: bold;
+ color: #a0a0a0;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-style: italic;
+ color: #a0a0a0;
+}
+span.rvts10 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts11 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts12 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts13 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts14 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts15 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts16 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts17, span.rvts17 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts18 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts19, span.rvts19 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts20 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts21, span.rvts21 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts22 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts23, span.rvts23 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts24 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts25 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts26 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts27 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts28 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts29 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts30 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts31 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts32 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts33 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts34 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts35 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts36 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts37, span.rvts37 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts38 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts39, span.rvts39 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts40 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts41, span.rvts41 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts42 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts43, span.rvts43 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts44 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts45 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts46 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts47 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts48 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts49 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts50
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.rvts51 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts52 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts53 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts54 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts55 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts56 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts57 /* Font Style */
+{
+ font-family: 'MS Sans Serif', 'Geneva', sans-serif;
+ color: #808080;
+}
+span.rvts58 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts59, span.rvts59 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps3 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps4 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps5 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps6 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps7 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps8 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps9 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps10 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps11 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps12 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps13 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps14 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps15 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps16 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps17 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps18 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps19 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps20 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps21 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps22 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps23 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps24 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps25 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps26 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps27 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps28 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps29 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps30 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps31 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps32 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps33 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps34
+{
+ background: #333399;
+}
+.rvps35 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps36 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps37 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps38 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps39 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps40 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps41 /* Paragraph Style */
+{
+ text-align: center;
+ background: #e4e4e4;
+ margin: 20px 0px 0px 0px;
+}
+.rvps42 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<script type="text/javascript">if(top.frames.length == 0) { top.location.href="../MathGraph32Helpesp.htm?Mesuredelongueur.html"; }</script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+
+<p class=rvps34><span class=rvts50>Medida de longitud.</span></p>
+<p><br></p>
+<p>Para medir una longitud su figura debe tener una longitud unidad.</p>
+<p>Basta entonces con cliquear el icono <img border=0 alt="" hspace=1 vspace=1 src="img_57.gif"> de medida de longitud luego de pulsar sobre dos puntos para medir la distancia que los separan.</p>
+<p>Estos dos puntos deben nombrarse.</p>
+<p>Si no se nombran ellos lo harán automáticamente luego de la medida.</p>
+<p class=rvps41><span class=rvts57>Copyright © &lt;2009&gt;, &lt;Yves Biton&gt;</span></p>
+<p class=rvps42><span class=rvts58>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts59 href="http://www.helpndoc.com" target="_blank">Easy CHM and documentation editor</a></p>
+
+</body></html>

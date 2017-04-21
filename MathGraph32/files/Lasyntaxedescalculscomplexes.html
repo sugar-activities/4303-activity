@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>La sintaxis de los cálculos complejos.</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ color: #a0a0a0;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
+ color: #696969;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-weight: bold;
+ color: #a0a0a0;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-style: italic;
+ color: #a0a0a0;
+}
+span.rvts10 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts11 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts12 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts13 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts14 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts15 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts16 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts17, span.rvts17 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts18 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts19, span.rvts19 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts20 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts21, span.rvts21 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts22 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts23, span.rvts23 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts24 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts25 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts26 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts27 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts28 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts29 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts30 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts31 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts32 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts33 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts34 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts35 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts36 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts37, span.rvts37 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts38 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts39, span.rvts39 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts40 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts41, span.rvts41 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts42 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts43, span.rvts43 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts44 /* Heading Title */
+{
+ font-size: 30pt;
+ font-weight: bold;
+}
+span.rvts45 /* Heading1 */
+{
+ font-size: 16pt;
+}
+span.rvts46 /* Heading2 */
+{
+ font-size: 15pt;
+}
+span.rvts47 /* Heading3 */
+{
+ font-size: 14pt;
+}
+span.rvts48 /* Heading4 */
+{
+ font-size: 13pt;
+}
+span.rvts49 /* Heading5 */
+{
+ font-size: 12pt;
+}
+span.rvts50
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts51
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #ff0000;
+}
+span.rvts52
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts53
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+}
+span.rvts54
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.rvts55 /* Font Style */
+{
+ font-family: 'MS Sans Serif', 'Geneva', sans-serif;
+ color: #808080;
+}
+span.rvts56 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts57, span.rvts57 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps3 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps4 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps5 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps6 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps7 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps8 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps9 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps10 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps11 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps12 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps13 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps14 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps15 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps16 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps17 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps18 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps19 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps20 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps21 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps22 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps23 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps24 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps25 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps26 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps27 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+.rvps28 /* Heading Title */
+{
+ text-align: center;
+ line-height: 1.50;
+ margin: 250px 0px 0px 0px;
+}
+.rvps29 /* Heading1 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps30 /* Heading2 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps31 /* Heading3 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps32 /* Heading4 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps33 /* Heading5 */
+{
+ border-color: #aaaaaa;
+ border-style: solid;
+ border-width: 1px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 20px 0px 10px 0px;
+}
+.rvps34
+{
+ background: #333399;
+}
+.rvps35 /* Paragraph Style */
+{
+ text-align: center;
+ background: #e4e4e4;
+ margin: 20px 0px 0px 0px;
+}
+.rvps36 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<script type="text/javascript">if(top.frames.length == 0) { top.location.href="../MathGraph32Helpesp.htm?Lasyntaxedescalculscomplexes.html"; }</script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+
+<p class=rvps34><span class=rvts54>La sintaxis de los cálculos complejos.</span></p>
+<p><br></p>
+<p><span class=rvts50>Un cálculo puede utilizar los operadores + (adición), - (sustracción), * (multiplicación), / (división), ^ (Elevación a una potencia), ² (Elevación al cuadrado), (citados por orden de prioridad creciente).</span></p>
+<p><span class=rvts51>A tener en cuenta:</span><span class=rvts50> Estos operadores deben imperativamente ser escritos y los espacios están permitidos.</span></p>
+<p><span class=rvts50>Los paréntesis pueden utilizarse.</span></p>
+<p><span class=rvts50>El argumento de las funciones matemáticas debe siempre contenerse en un paréntesis.</span></p>
+<p><span class=rvts50>Las funciones matemáticas predefinidas son:</span></p>
+<p><span class=rvts50><br></span></p>
+<div><table border=1 cellpadding=0 cellspacing=-1 style="border-width: 0px; border-collapse: collapse;">
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>abs</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Módulo del complejo. El resultado es un complejo de parte imaginaria nula.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>conj</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Conjugado de un complejo</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>Arg</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Proporciona un complejo cuya parte imaginaria es nula y cuya parte real es el argumento principal del complejo pasado en argumento..</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>re</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Proporciona un complejo cuya parte imaginaria es nula y cuya parte real es la parte real del complejo pasado en argumento.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>im</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Proporciona un complejo cuya parte imaginaria es nula y cuya parte real es la parte imaginaria del complejo pasado en argumento..</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>sqrt o rac</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>raíz cuadrada. Si el argumento no es real o si es estrictamente negativo, el cálculo resultante se dará por no existente</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>int</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>parte entera. Si el argumento no es real, el cálculo resultante se dará por no existente..</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>sin</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>seno</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>cos</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>coseno</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>tan</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>tangente</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>ln</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>logaritmo neperiano</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 height=14 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>exp</span></p>
+</td>
+<td width=480 height=14 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>función exponencial</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>Arcsen</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Arco Seno. Si el argumento no es real o si no está comprendido entre -1 y +1, el cálculo resultante se dará por no existente.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>ArcCos</span><span class=rvts50> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Arco Coseno. Si el argumento no es real o si no está comprendido entre -1 y +1, el cálculo resultante se dará por no existente.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>ArcTan</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Arco Tangente. Si el argumento no es real, el cálculo resultante se dará por no existente.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>ch</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Coseno hiperbólico</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>sh</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Seno hiperbólico</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>th</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>tangente hiperbólica</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>Argsh</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Arco Seno hiperbólico. Si el argumento no es real, el cálculo resultante se dará por no existente.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>Argch</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Arco Coseno hiperbólico. Si el argumento no es real o si es estrictamente inferior a 1, el cálculo resultante se dará por no existente.</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>Argth</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Arco Tangente hiperbólico. Si el argumento no es real o si no está comprendido estrictamente entre -1 y +1, el cálculo resultante se dará por no existente.</span></p>
+<p><span class=rvts50>rand</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>rand</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Devuelve un número complejo de la forma a + ib donde a y b son dos reales pseudo aleatorios comprendidos entre 0 y 1 (0 excluido y 1 incluido)..</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td width=94 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts52>²</span></p>
+</td>
+<td width=480 valign=top style="border-width : 1px; border-color: #000000; border-style: solid;">
+<p><span class=rvts50>Elevación al cuadrado el número complejo o real que precede el símbolo ².</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p><br></p>
+<p><span class=rvts52>Los tests:</span><span class=rvts50>&nbsp; En los cálculos complejos, sólo tienen sentido si los dos operandos son reales. Devuelven un valor que es 1 cuando el resultado del test es verdadero, si no devuelven cero.</span></p>
+<p><span class=rvts50> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p><span class=rvts53> &nbsp; &nbsp; &nbsp; &nbsp;a</span><span class=rvts50> &gt; </span><span class=rvts53>b</span><span class=rvts50>&nbsp;&nbsp;&nbsp; devuelve 1 si </span><span class=rvts53>a</span><span class=rvts50> es estrictamente superior a </span><span class=rvts53>b</span><span class=rvts50> y cero si no.</span></p>
+<p><span class=rvts50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts53>a</span><span class=rvts50> &lt; </span><span class=rvts53>b</span><span class=rvts50>&nbsp;&nbsp;&nbsp; devuelve 1 si </span><span class=rvts53>a</span><span class=rvts50> es estrictamente inferior a </span><span class=rvts53>b</span><span class=rvts50> y cero si no.</span></p>
+<p><span class=rvts50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts53>a</span><span class=rvts50> &gt;= </span><span class=rvts53>b</span><span class=rvts50>&nbsp; devuelve 1 si </span><span class=rvts53>a</span><span class=rvts50> es superior o igual a </span><span class=rvts53>b</span><span class=rvts50> y cero si no.</span></p>
+<p><span class=rvts50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts53>a</span><span class=rvts50> &lt;= </span><span class=rvts53>b</span><span class=rvts50>&nbsp; devuelve 1 si </span><span class=rvts53>a</span><span class=rvts50> es inferior o igual a </span><span class=rvts53>b</span><span class=rvts50> y cero si no.</span></p>
+<p><span class=rvts50>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=rvts53>a </span><span class=rvts50>= </span><span class=rvts53>b</span><span class=rvts50>&nbsp;&nbsp;&nbsp; devuelve 1&nbsp; si </span><span class=rvts53>a</span><span class=rvts50> es igual a </span><span class=rvts53>b</span><span class=rvts50> y cero si no</span></p>
+<p class=rvps35><span class=rvts55>Copyright © &lt;2009&gt;, &lt;Yves Biton&gt;</span></p>
+<p class=rvps36><span class=rvts56>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts57 href="http://www.helpndoc.com" target="_blank">Easily create PDF Help documents</a></p>
+
+</body></html>

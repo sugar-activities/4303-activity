@@ -1,0 +1,6 @@
+[Activity]
+name = MathGraph32
+activity_version = 9
+service_name = org.ceibaljam.MathGraph32
+icon = mathgraph32-sugar-icon
+exec = mathgraph32-activity

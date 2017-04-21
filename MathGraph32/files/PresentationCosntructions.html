@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Presentación</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #000080;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Hint */
+{
+ color: #a0a0a0;
+}
+span.rvts7 /* Font Hint Title */
+{
+ font-size: 15pt;
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-weight: bold;
+ color: #696969;
+}
+span.rvts8 /* Font Hint Bold */
+{
+ font-weight: bold;
+ color: #a0a0a0;
+}
+span.rvts9 /* Font Hint Italic */
+{
+ font-style: italic;
+ color: #a0a0a0;
+}
+span.rvts10
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts11
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-style: italic;
+}
+span.rvts12
+{
+ font-size: 14pt;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.rvts13
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts14
+{
+ font-size: 11pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts15 /* Font Style */
+{
+ font-family: 'MS Sans Serif', 'Geneva', sans-serif;
+ color: #808080;
+}
+span.rvts16 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts17, span.rvts17 /* Font Style */
+{
+ font-family: 'Verdana', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+ background: #333399;
+}
+.rvps3 /* Paragraph Style */
+{
+ text-align: center;
+ background: #e4e4e4;
+ margin: 20px 0px 0px 0px;
+}
+.rvps4 /* Paragraph Style */
+{
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-bottom: none;
+ border-left: none;
+ background: #ffffff;
+ padding: 3px 0px 0px 0px;
+ margin: 27px 0px 0px 0px;
+}
+--></style>
+<script type="text/javascript">if(top.frames.length == 0) { top.location.href="../MathGraph32Helpesp.htm?PresentationCosntructions.html"; }</script>
+<meta name="generator" content="HelpNDoc Freeware Edition"></head>
+<body>
+
+<p class=rvps2><span class=rvts12>Presentación de las construcciones.</span></p>
+<p><br></p>
+<p><span class=rvts10><br></span></p>
+<p class=rvps2><span class=rvts12>Las construcciones.</span></p>
+<p><br></p>
+<p><span class=rvts10>Las construcciones son una de las funcionalidades más potentes de MathGraph32.</span></p>
+<p><span class=rvts10>Las construcciones son clases de figuras que se pueden incorporar en otras figuras.</span></p>
+<p><span class=rvts10>Una construcción utiliza objetos de la figura en la cual se la incorpora, llamados objetos fuentes.</span></p>
+<p><span class=rvts10>Utiliza de manera interna&nbsp; objetos (llamados objetos intermediarios) que servirán para crear nuevos objetos (llamados objetos finales)&nbsp; que podrán ser utilizados por los objetos que se crearán más tarde en la figura.</span></p>
+<p><span class=rvts10>Los objetos fuentes y finales pueden ser objetos gráficos o de tipo cálculo. Los referenciales se consideran como objetos numéricos en la versión Java.</span></p>
+<p><span class=rvts10>Para ser válida, una construcción debe respetar la siguiente norma: </span></p>
+<p><span class=rvts10>Los objetos finales sólo deben construirse con objetos&nbsp; fuentes y cada uno de los objetos fuentes debe servir al menos una vez para crear un objeto final.</span></p>
+<p><span class=rvts10>Una única excepción a esta norma: Si los objetos finales se construyen utilizando los objetos fuentes y una variable que no es un objeto fuente, la construcción se aceptan y la variable utilizada será parte de los objetos intermediarios.</span></p>
+<p><span class=rvts10><br></span></p>
+<p><span class=rvts10>Las construcciones se registran en archivos cuya extensión es mgc (tal archivo se llamará por ejemplo Tangentes.mgc).</span></p>
+<p><span class=rvts10>Se carga una construcción en una&nbsp; figura con la ayuda del menú </span><span class=rvts11>Construcciones - Incorporar una construcción de la figura desde un archivo</span><span class=rvts10>.</span></p>
+<p><span class=rvts10>Se utiliza una construcción ya cargada en la figura con ayuda del menú </span><span class=rvts11>Construcciones - Implementar una construcción de la figura</span><span class=rvts10>.</span></p>
+<p><span class=rvts10>Se puede también utilizar una construcción sin cargarla en la figura con ayuda del menú </span><span class=rvts11>Construcciones - Implementar una construcción desde un archivo.</span></p>
+<p><span class=rvts11><br></span></p>
+<p><span class=rvts10>Se guarda una construcción en un disco o cualquier otro soporte de registro con ayuda del menú </span><span class=rvts11>Construcciones - Guardar una construcción de la figura en un archivo</span><span class=rvts10>.</span></p>
+<p><span class=rvts11><br></span></p>
+<p><span class=rvts10>Cuando se aplicó una construcción en una figura, es posible obtener que todos los objetos intermediarios vuelvan a ser objetos normales utilizando el menú </span><span class=rvts11>Construcciones</span><span class=rvts10> - </span><span class=rvts11>Fusionar las construcciones implementadas de la figura.</span></p>
+<p><span class=rvts10><br></span></p>
+<p><span class=rvts13>Cómo definir una construcción</span></p>
+<p><span class=rvts10>Para definir una construcción, se comienza por elegir los objetos fuentes no gráficos y gráficas.</span></p>
+<p><span class=rvts10>Es necesario tener en cuenta que en la puesta en práctica de la construcción los objetos fuentes no gráficos serán los que deberán designarse en primer lugar.</span></p>
+<p><span class=rvts10>La elección de los objetos fuentes se hace mediante el menú </span><span class=rvts11>Construcciones - Elección de los elementos fuentes</span><span class=rvts10> luego </span><span class=rvts11>no gráficos</span><span class=rvts10> o </span><span class=rvts11>gráficos</span><span class=rvts10>.</span></p>
+<p><span class=rvts10>Una vez&nbsp; elegidos los objetos fuentes, elegir los objetos finales no gráficos y gráficos. Sólo es posible elegir objetos exclusivamente construidos con los objetos fuentes especificados.</span></p>
+<p><span class=rvts10>La elección de los objetos finales se hace mediante el menú </span><span class=rvts11>Construcciones&nbsp; - Elección de los elementos finales</span><span class=rvts10> luego </span><span class=rvts11>no gráficos</span><span class=rvts10> o </span><span class=rvts11>gráficos</span><span class=rvts10>.</span></p>
+<p><span class=rvts10>Es posible cancelar las elecciones de los elementos fuentes y finales mediante el menú </span><span class=rvts11>Construcciones&nbsp; - Reinicializar la construcción en curso</span><span class=rvts10>.</span></p>
+<p><span class=rvts10><br></span></p>
+<p><span class=rvts13>Cómo implementar una construcción</span></p>
+<p><span class=rvts10>Vamos a ilustrarlo con un ejemplo utilizando la construcción nombrada </span><span class=rvts11>CurvaFuncionYPrimitiva</span><span class=rvts10> que se proporciona con MathGraph32.</span></p>
+<p><span class=rvts10>Comience por crear una figura nueva provista de un referencial luego una función f (por ejemplo f(x) = sen(x)).</span></p>
+<p><span class=rvts10>Comenzamos por utilizar el menú </span><span class=rvts11>Construcciones - Implementar una construcción desde un archivo</span><span class=rvts10>.</span></p>
+<p><span class=rvts10>Una caja de diálogo se abre en el directorio elegido en el menú</span><span class=rvts11> Opciones - Preferencias</span><span class=rvts10>, pestaña </span><span class=rvts11>Directorio construcciones</span><span class=rvts10> (o en el directorio habitual si ninguna elección se hizo en el menú </span><span class=rvts11>Preferencias</span><span class=rvts10>).</span></p>
+<p><span class=rvts10>Ubicarse en el directorio que contiene esta construcción.</span></p>
+<p><span class=rvts10>Observemos que al cliquear sobre una construcción (cuya extensión es mgc) la caja de diálogo nos informa sobre las funciones de esta construcción.</span></p>
+<p><span class=rvts10>Cliquear sobre el nombre de la construcción luego sobre el botón </span><span class=rvts14>Abrir</span><span class=rvts10>.</span></p>
+<p><span class=rvts10>Una caja de diálogo se abre que va a permitirles elegir los objetos fuentes.</span></p>
+<p><span class=rvts10>El primer objeto fuente (n°1) es la función.</span></p>
+<p><span class=rvts10>Elíjala como abajo.</span></p>
+<p><span class=rvts10><br></span></p>
+<p><img border=0 alt="" hspace=1 vspace=1 src="img_186.gif"></p>
+<p><span class=rvts10>El segundo objeto fuente es el valor que debe anular la primitiva.</span></p>
+<p><span class=rvts10>Elijamos pi por ejemplo como abajo..</span></p>
+<p><img border=0 alt="" hspace=1 vspace=1 src="img_187.gif"></p>
+<p><span class=rvts10>El tercer objeto fuente es el referencial.</span></p>
+<p><span class=rvts10>Elijámoslo como abajo.</span></p>
+<p><img border=0 alt="" hspace=1 vspace=1 src="img_188.gif"></p>
+<p><span class=rvts10>No hay ya más que validar.</span></p>
+<p><span class=rvts10>Como nuestra construcción no espera objetos fuentes gráficos, se implementa inmediatamente.</span></p>
+<p><span class=rvts10>Ahí se tiene por ejemplo el resultado:</span></p>
+<p><img border=0 alt="" hspace=1 vspace=1 src="img_189.gif"></p>
+<p><span class=rvts10>Al apoyar en la tecla </span><span class=rvts14>F6</span><span class=rvts10> (que sirve para ver los objetos numéricos creados) verán que las construcciones crearon un cálculo nombrado x que contiene la abscisa del punto ligado al eje de las abscisas, un cálculo nominado y que contiene </span><span class=rvts11>f</span><span class=rvts10>(</span><span class=rvts11>x</span><span class=rvts10>) y un cálculo nombrado y1 que contiene la imagen de </span><span class=rvts11>x</span><span class=rvts10> por la primitiva..</span></p>
+<p><span class=rvts10><br></span></p>
+<p class=rvps3><span class=rvts15>Copyright © &lt;2009&gt;, &lt;Yves Biton&gt;</span></p>
+<p class=rvps4><span class=rvts16>Created with the Freeware Edition of HelpNDoc: </span><a class=rvts17 href="http://www.helpndoc.com" target="_blank">Easily create PDF Help documents</a></p>
+
+</body></html>
